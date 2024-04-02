@@ -1,0 +1,143 @@
+/* CSS for styling the layout */
+.question-container {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+    -fx-padding: 10px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.question {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+.options-container {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+.option-button {
+    -fx-font-size: 14px;
+    -fx-pref-width: 150px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.submit-button {
+    -fx-font-size: 14px;
+    -fx-min-width: 90px;
+    -fx-background-color: Blue;
+    -fx-text-fill: Black;
+    -fx-padding: 10px 20px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-margin: 5px;
+}
+.submit-button:hover{
+     -fx-opacity: 0.8; /* Reduce opacity on hover */
+}
+
+.back-button {
+    -fx-font-size: 14px;
+    -fx-min-width: 100px;
+    -fx-background-color: White;
+    -fx-text-fill: black;
+    -fx-padding: 10px 20px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-margin: 5px;
+}
+
+.back-button:hover {
+     -fx-background-color: black;
+     -fx-text-fill: White;
+}
+.restart-button {
+   -fx-font-size: 14px;
+       -fx-min-width: 100px;
+       -fx-background-color: Green;
+       -fx-text-fill: black;
+       -fx-padding: 10px 20px;
+       -fx-border-color: black;
+       -fx-border-width: 1px;
+       -fx-border-radius: 5px;
+       -fx-margin: 5px;
+       }
+.restart-button:hover {
+     -fx-opacity: 0.8; /* Reduce opacity on hover */
+}
+/* Style for the button container */
+.button-container {
+    -fx-alignment: center; /* Center the buttons horizontally */
+    -fx-spacing: 10px; /* Add spacing between the buttons */
+}
+
+/* Style for the main container */
+.main-container {
+    -fx-spacing: 10px; /* Add spacing between the components */
+    -fx-alignment: center; /* Center the components vertically */
+}
+
+/* Question container */
+.question-container {
+    -fx-padding: 10px;
+    -fx-background-color: #f0f0f0;
+}
+
+/* Options container */
+.options-container {
+    -fx-spacing: 10px;
+}
+
+/* Start button */
+.start-button {
+    -fx-background-color: #2196F3; /* Blue */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+/* Option button */
+.option-button {
+    -fx-background-color: #f0f0f0;
+    -fx-font-size: 14px;
+}
+
+/* Timer label */
+.timer-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+
+    -fx-padding: -3px -60px; /* Add padding to create some space */
+}
+
+/* Question info container */
+.question-info-container {
+    -fx-spacing: 10px;
+}
+
+.final-score-box {
+    /* Add styles for final score box here */
+    -fx-background-color: #f0f0f0; /* Light gray background */
+    -fx-padding: 10px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+.question-info-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: green; /* Green text */
+    -fx-padding: 2px 0; /* Add padding to separate the labels */
+}
+/* CSS for styling the layout */
+.question-text-label {
+    -fx-font-size: 20px; /* Adjust the font size as desired */
+}
+/* CSS for styling the layout */
+.final-score-label, .time-taken-label {
+    -fx-font-size: 18px; /* Adjust the font size as desired */
+}
