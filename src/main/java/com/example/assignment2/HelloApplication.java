@@ -31,7 +31,8 @@ public class HelloApplication extends Application {
     private int score;
     private Label timerLabel;
     private Timeline timeline;
-    private int timeLeftInSeconds = 60; // 3 minutes
+    // 3 minutes
+    private int timeLeftInSeconds = 60;
     private Button startButton;
     private Stage primaryStage;
     // Flag to track if time is up
@@ -41,7 +42,8 @@ public class HelloApplication extends Application {
     public void start(Stage primaryStage) throws Exception {
         this.primaryStage = primaryStage;
 
-        trivia = new Trivia(); // Create an instance of the Trivia class
+        // Creating an instance of the Trivia class
+        trivia = new Trivia();
         currentQuestionIndex = 0;
         score = 0;
 
@@ -53,6 +55,7 @@ public class HelloApplication extends Application {
         optionsContainer = new VBox();
         optionsContainer.getStyleClass().add("options-container");
 
+        //submit button
         submitButton = new Button("Submit");
         submitButton.getStyleClass().add("submit-button");
         submitButton.setOnAction(event -> {
@@ -63,6 +66,7 @@ public class HelloApplication extends Application {
             }
         });
 
+        //back button
         backButton = new Button("Back");
         backButton.getStyleClass().add("back-button");
         backButton.setOnAction(event -> {
@@ -73,6 +77,7 @@ public class HelloApplication extends Application {
             }
         });
 
+        //restart button
         startButton = new Button("Restart");
         startButton.getStyleClass().add("restart-button");
         startButton.setOnAction(event -> {
@@ -134,12 +139,12 @@ public class HelloApplication extends Application {
         // Start the timeline
         timeline.play();
     }
-    private void updateTimer() {
-        if (timeLeftInSeconds > 0) {
-            timeLeftInSeconds--;
-            int minutes = timeLeftInSeconds / 60;
-            int seconds = timeLeftInSeconds % 60;
-            String formattedTime = String.format("%02d:%02d", minutes, seconds);
+        private void updateTimer() {
+           if (timeLeftInSeconds > 0) {
+              timeLeftInSeconds--;
+              int minutes = timeLeftInSeconds / 60;
+              int seconds = timeLeftInSeconds % 60;
+              String formattedTime = String.format("%02d:%02d", minutes, seconds);
 
             // Update the timer label on the JavaFX Application Thread
             Platform.runLater(() -> timerLabel.setText(formattedTime));

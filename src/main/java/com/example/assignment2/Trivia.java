@@ -56,7 +56,8 @@ class Trivia {
         if (index >= 0 && index < questions.size()) {
             return questions.get(index);
         } else {
-            return null; // Handle the case when the index is out of bounds
+            // Handle the case when the index is out of bounds
+            return null;
         }
     }
     // Get the total number of questions
@@ -95,4 +96,5 @@ class Trivia {
     public String getDescription() {
         return null;
     }
-}
+
+    }
